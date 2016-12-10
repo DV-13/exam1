@@ -1,6 +1,6 @@
 ﻿namespace exam1
 {
-	partial class Form1
+	partial class Form_main
 	{
 		/// <summary>
 		/// Обязательная переменная конструктора.
@@ -28,9 +28,18 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
+			this.SuspendLayout();
+			// 
+			// Form_main
+			// 
+			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Text = "Form1";
+			this.ClientSize = new System.Drawing.Size(884, 611);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Name = "Form_main";
+			this.Text = "Marathon Skills";
+			this.ResumeLayout(false);
+
 		}
 
 		#endregion
