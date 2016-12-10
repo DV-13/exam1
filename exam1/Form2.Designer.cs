@@ -1,6 +1,6 @@
 ﻿namespace exam1
 {
-	partial class Form1
+	partial class Form2
 	{
 		/// <summary>
 		/// Required designer variable.
@@ -33,15 +33,15 @@
 			// 
 			// button1
 			// 
-			this.button1.Location = new System.Drawing.Point(43, -1);
+			this.button1.Location = new System.Drawing.Point(659, 185);
 			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 101);
+			this.button1.Size = new System.Drawing.Size(75, 23);
 			this.button1.TabIndex = 0;
 			this.button1.Text = "button1";
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// Form1
+			// Form2
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -49,9 +49,9 @@
 			this.Controls.Add(this.button1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Location = new System.Drawing.Point(0, 65);
-			this.Name = "Form1";
+			this.Name = "Form2";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-			this.Text = "Form1";
+			this.Text = "Form2";
 			this.ResumeLayout(false);
 
 		}

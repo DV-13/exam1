@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace exam1
 {
-	public partial class Form1 : Form
+	public partial class Form2 : Form
 	{
-		public Form1()
+		public Form2()
 		{
 			InitializeComponent();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Form2 MDIChild = new Form2();
+			Form1 MDIChild = new Form1();
 			// Set the Parent Form of the Child window.
 			MDIChild.MdiParent = this.MdiParent;
 			// Display the new form.
