@@ -45,10 +45,10 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(980, 555);
+			this.ClientSize = new System.Drawing.Size(980, 550);
 			this.Controls.Add(this.button1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Location = new System.Drawing.Point(0, 49);
+			this.Location = new System.Drawing.Point(0, 65);
 			this.Name = "Form2";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Form2";

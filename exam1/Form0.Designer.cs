@@ -30,14 +30,14 @@
 		{
 			this.SuspendLayout();
 			// 
-			// Form1
+			// Form0
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(980, 555);
+			this.ClientSize = new System.Drawing.Size(980, 550);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Location = new System.Drawing.Point(0, 49);
-			this.Name = "Form1";
+			this.Location = new System.Drawing.Point(0, 65);
+			this.Name = "Form0";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
 			this.Text = "Form1";
 			this.ResumeLayout(false);
