@@ -57,6 +57,11 @@ namespace exam1
 			else
 				newChildName = newChildName.Substring(4, 2);
 
+			if (newChildName == "3")          //Прятание элементов заголовка.
+				button_logout.Visible = false;
+			else
+				button_logout.Visible = true;
+
 			if (newChildName == "1")          //Прятание элементов заголовка.
 			{
 				Array.Clear(history, 0, 10); ihistory = 0; //Сброс истории
@@ -72,7 +77,6 @@ namespace exam1
 			}
 
 			//label_timer.Text = newChildName; //debug
-			history[ihistory] = Int32.Parse(newChildName);
 			ihistory++;
 			//label_top.Text = null;           //debug
 			//foreach (int i in history)
@@ -149,42 +153,42 @@ namespace exam1
 						MDIChild.MdiParent = this; MDIChild.Show();
 						break;
 					}
-				//case 11:
-				//	{
-				//		Form11 MDIChild = new Form11();
-				//		MDIChild.MdiParent = this; MDIChild.Show();
-				//		break;
-				//	}
-				//case 12:
-				//	{
-				//		Form12 MDIChild = new Form12();
-				//		MDIChild.MdiParent = this; MDIChild.Show();
-				//		break;
-				//	}
-				//case 13:
-				//	{
-				//		Form13 MDIChild = new Form13();
-				//		MDIChild.MdiParent = this; MDIChild.Show();
-				//		break;
-				//	}
-				//case 14:
-				//	{
-				//		Form14 MDIChild = new Form14();
-				//		MDIChild.MdiParent = this; MDIChild.Show();
-				//		break;
-				//	}
+				case 11:
+					{
+						Form11 MDIChild = new Form11();
+						MDIChild.MdiParent = this; MDIChild.Show();
+						break;
+					}
+				case 12:
+					{
+						Form12 MDIChild = new Form12();
+						MDIChild.MdiParent = this; MDIChild.Show();
+						break;
+					}
+				case 13:
+					{
+						Form13 MDIChild = new Form13();
+						MDIChild.MdiParent = this; MDIChild.Show();
+						break;
+					}
+				case 14:
+					{
+						Form14 MDIChild = new Form14();
+						MDIChild.MdiParent = this; MDIChild.Show();
+						break;
+					}
 				//case 15:
 				//	{
 				//		Form15 MDIChild = new Form15();
 				//		MDIChild.MdiParent = this; MDIChild.Show();
 				//		break;
 				//	}
-				//case 16:
-				//	{
-				//		Form16 MDIChild = new Form16();
-				//		MDIChild.MdiParent = this; MDIChild.Show();
-				//		break;
-				//	}
+				case 16:
+					{
+						Form16 MDIChild = new Form16();
+						MDIChild.MdiParent = this; MDIChild.Show();
+						break;
+					}
 				//case 17:
 				//	{
 				//		Form17 MDIChild = new Form17();
