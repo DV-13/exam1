@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.panel_topbar = new System.Windows.Forms.Panel();
 			this.label_top = new System.Windows.Forms.Label();
 			this.button_home = new System.Windows.Forms.Button();
@@ -35,6 +36,7 @@
 			this.button_back = new System.Windows.Forms.Button();
 			this.panel_bottom = new System.Windows.Forms.Panel();
 			this.label_timer = new System.Windows.Forms.Label();
+			this.timer_countdown = new System.Windows.Forms.Timer(this.components);
 			this.panel_topbar.SuspendLayout();
 			this.panel_bottom.SuspendLayout();
 			this.SuspendLayout();
@@ -71,6 +73,7 @@
 			this.button_home.TabIndex = 0;
 			this.button_home.Text = "🏠";
 			this.button_home.UseVisualStyleBackColor = true;
+			this.button_home.Click += new System.EventHandler(this.button_home_Click);
 			// 
 			// button_logout
 			// 
@@ -85,12 +88,14 @@
 			// button_back
 			// 
 			this.button_back.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.button_back.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.button_back.Location = new System.Drawing.Point(15, 15);
 			this.button_back.Name = "button_back";
 			this.button_back.Size = new System.Drawing.Size(100, 35);
 			this.button_back.TabIndex = 0;
 			this.button_back.Text = "Назад";
 			this.button_back.UseVisualStyleBackColor = true;
+			this.button_back.Click += new System.EventHandler(this.button_back_Click);
 			// 
 			// panel_bottom
 			// 
@@ -103,14 +108,20 @@
 			// 
 			// label_timer
 			// 
-			this.label_timer.AutoSize = true;
 			this.label_timer.Font = new System.Drawing.Font("Open Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label_timer.ForeColor = System.Drawing.SystemColors.ControlLight;
-			this.label_timer.Location = new System.Drawing.Point(400, 3);
+			this.label_timer.Location = new System.Drawing.Point(15, 3);
 			this.label_timer.Name = "label_timer";
-			this.label_timer.Size = new System.Drawing.Size(184, 33);
+			this.label_timer.Size = new System.Drawing.Size(950, 33);
 			this.label_timer.TabIndex = 1;
 			this.label_timer.Text = "█label_timer█";
+			this.label_timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			// 
+			// timer_countdown
+			// 
+			this.timer_countdown.Enabled = true;
+			this.timer_countdown.Interval = 1000;
+			this.timer_countdown.Tick += new System.EventHandler(this.timer_countdown_Tick);
 			// 
 			// FormMain
 			// 
@@ -124,10 +135,10 @@
 			this.IsMdiContainer = true;
 			this.Name = "FormMain";
 			this.Text = "Marathon Skills";
+			this.MdiChildActivate += new System.EventHandler(this.FormMain_MdiChildActivate);
 			this.panel_topbar.ResumeLayout(false);
 			this.panel_topbar.PerformLayout();
 			this.panel_bottom.ResumeLayout(false);
-			this.panel_bottom.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -141,6 +152,7 @@
 		private System.Windows.Forms.Button button_home;
 		private System.Windows.Forms.Panel panel_bottom;
 		private System.Windows.Forms.Label label_timer;
+		private System.Windows.Forms.Timer timer_countdown;
 	}
 }
 
