@@ -115,12 +115,12 @@
 			// 
 			this.label_subtitle.AutoSize = true;
 			this.label_subtitle.BackColor = System.Drawing.SystemColors.ControlLightLight;
-			this.label_subtitle.Font = new System.Drawing.Font("Open Sans Extrabold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label_subtitle.Font = new System.Drawing.Font("Open Sans", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label_subtitle.ForeColor = System.Drawing.Color.Gray;
-			this.label_subtitle.Location = new System.Drawing.Point(373, 109);
+			this.label_subtitle.Location = new System.Drawing.Point(391, 113);
 			this.label_subtitle.Name = "label_subtitle";
 			this.label_subtitle.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.label_subtitle.Size = new System.Drawing.Size(239, 39);
+			this.label_subtitle.Size = new System.Drawing.Size(192, 33);
 			this.label_subtitle.TabIndex = 2;
 			this.label_subtitle.Text = "Подзаголовок";
 			// 
@@ -195,6 +195,7 @@
 			this.label_description.Size = new System.Drawing.Size(131, 33);
 			this.label_description.TabIndex = 2;
 			this.label_description.Text = "Описание";
+			this.label_description.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// dateTimePicker_date
 			// 
