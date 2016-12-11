@@ -59,6 +59,7 @@
 			this.button0.TabIndex = 3;
 			this.button0.Text = "Marathon Skills 2017";
 			this.button0.UseVisualStyleBackColor = true;
+			this.button0.Click += new System.EventHandler(this.button0_Click);
 			// 
 			// button1
 			// 
@@ -81,6 +82,7 @@
 			this.button2.TabIndex = 5;
 			this.button2.Text = "Предыдущие результаты";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// button3
 			// 
@@ -92,6 +94,7 @@
 			this.button3.TabIndex = 6;
 			this.button3.Text = "Список благотворительных организаций";
 			this.button3.UseVisualStyleBackColor = true;
+			this.button3.Click += new System.EventHandler(this.button3_Click);
 			// 
 			// button4
 			// 

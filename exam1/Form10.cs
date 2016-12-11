@@ -16,5 +16,23 @@ namespace exam1
 		{
 			InitializeComponent();
 		}
+
+		private void button0_Click(object sender, EventArgs e)
+		{
+			Form11 MDIChild = new Form11(); //переход с одной формы на другую 
+			MDIChild.MdiParent = this.MdiParent; MDIChild.Show(); Close();
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			Form14 MDIChild = new Form14(); //переход с одной формы на другую 
+			MDIChild.MdiParent = this.MdiParent; MDIChild.Show(); Close();
+		}
+
+		private void button3_Click(object sender, EventArgs e)
+		{
+			Form13 MDIChild = new Form13(); //переход с одной формы на другую 
+			MDIChild.MdiParent = this.MdiParent; MDIChild.Show(); Close();
+		}
 	}
 }
