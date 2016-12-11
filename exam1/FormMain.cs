@@ -12,8 +12,9 @@ namespace exam1
 {
 	public partial class FormMain : Form
 	{
-		public int[] history = new int[10]; //История
+		public int[] history = new int[50]; //История
 		public int ihistory = 0; //Индекс для истории
+		DateTime Event;
 
 		public FormMain()
 		{
@@ -22,6 +23,8 @@ namespace exam1
 			StartPosition = FormStartPosition.CenterScreen; //запуск окна в центре экрана
 			Form1 MDIChild = new Form1(); //запуск дочерней формы
 			MDIChild.MdiParent = this; MDIChild.Show();
+			DateTime.TryParse("18.07.2017", out Event);
+			label_timer.Text = ((Event - DateTime.Now).Days + " дней " + (Event - DateTime.Now).Hours + " часов и " + (Event - DateTime.Now).Minutes + " минут до старта марафона!");
 		}
 
 		private void button_home_Click(object sender, EventArgs e)
@@ -45,23 +48,23 @@ namespace exam1
 				Array.Clear(history, 0, 10); ihistory = 0; //Сброс истории
 				button_back.Visible = false;
 				button_home.Visible = false;
-				//label_top.Visible = false;
+				label_top.Visible = false;
 			}
 			else
 			{
 				button_back.Visible = true;
 				button_home.Visible = true;
-				//label_top.Visible = true;
+				label_top.Visible = true;
 			}
 
-			label_timer.Text = newChildName;
+			//label_timer.Text = newChildName; //debug
 			history[ihistory] = Int32.Parse(newChildName);
 			ihistory++;
-			label_top.Text = null;
-			foreach (int i in history)
-			{
-				label_top.Text += (i+",");
-			}
+			//label_top.Text = null;           //debug
+			//foreach (int i in history)
+			//{
+			//	label_top.Text += (i+",");
+			//}
 		}
 
 		private void button_back_Click(object sender, EventArgs e)
@@ -320,6 +323,11 @@ namespace exam1
 				}
 			}
 			OldMDIChild.Close();
+		}
+
+		private void timer_countdown_Tick(object sender, EventArgs e)
+		{
+			label_timer.Text = ((Event - DateTime.Now).Days + " дней " + (Event - DateTime.Now).Hours + " часов и " + (Event - DateTime.Now).Minutes + " минут до старта марафона!");
 		}
 	}
 }
