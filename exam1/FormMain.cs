@@ -77,6 +77,7 @@ namespace exam1
 			}
 
 			//label_timer.Text = newChildName; //debug
+			history[ihistory] = Int32.Parse(newChildName);
 			ihistory++;
 			//label_top.Text = null;           //debug
 			//foreach (int i in history)
