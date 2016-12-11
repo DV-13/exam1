@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +15,17 @@ namespace exam1
 	{
 		public int[] history = new int[50]; //История
 		public int ihistory = 0; //Индекс для истории
+
 		DateTime Event;
+
+		//static string MyConString = "SERVER=localhost;" + "DATABASE=mydatabase;" + "UID=testuser;" + "PASSWORD=testpassword;";
+		//MySqlConnection connection = new MySqlConnection(MyConString);
 
 		public FormMain()
 		{
 			InitializeComponent();
+
+			CancelButton = button_back;
 
 			MaximizeBox = false; //состояние кнопки разворачивания окна на полный экран
 			StartPosition = FormStartPosition.CenterScreen; //запуск окна в центре экрана
@@ -28,8 +35,6 @@ namespace exam1
 
 			DateTime.TryParse("18.07.2017", out Event);//Для таймера
 			label_timer.Text = ((Event - DateTime.Now).Days + " дней " + (Event - DateTime.Now).Hours + " часов и " + (Event - DateTime.Now).Minutes + " минут до старта марафона!");
-
-
 		}
 
 		private void button_home_Click(object sender, EventArgs e)
@@ -72,7 +77,7 @@ namespace exam1
 			//}
 		}
 
-		private void button_back_Click(object sender, EventArgs e)
+		public void button_back_Click(object sender, EventArgs e)
 		{
 			ihistory--;
 			history[ihistory] = 0;
@@ -337,8 +342,9 @@ namespace exam1
 
 		private void button_logout_Click(object sender, EventArgs e)
 		{
+			var OldMDIChild = ActiveMdiChild;
 			Form3 MDIChild = new Form3(); //переход с одной формы на другую 
-			MDIChild.MdiParent = this.MdiParent; MDIChild.Show(); Close();
+			MDIChild.MdiParent = this; MDIChild.Show(); OldMDIChild.Close();
 		}
 	}
 }

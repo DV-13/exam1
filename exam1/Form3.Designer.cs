@@ -115,6 +115,7 @@
 			this.button0.TabIndex = 9;
 			this.button0.Text = "Login";
 			this.button0.UseVisualStyleBackColor = true;
+			this.button0.Click += new System.EventHandler(this.button0_Click);
 			// 
 			// button1
 			// 
@@ -125,6 +126,7 @@
 			this.button1.TabIndex = 10;
 			this.button1.Text = "Отмена";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// Form3
 			// 
