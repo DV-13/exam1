@@ -8,6 +8,7 @@ namespace exam1
 {
 	static class Program
 	{
+		public static string reg = "";
 		/// <summary>
 		/// Главная точка входа для приложения.
 		/// </summary>

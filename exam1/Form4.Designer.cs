@@ -52,6 +52,7 @@
 			this.button1 = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
 			this.button0 = new System.Windows.Forms.Button();
+			this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox_image)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -211,6 +212,7 @@
 			this.textBox6.Font = new System.Drawing.Font("Open Sans", 13.75F);
 			this.textBox6.Location = new System.Drawing.Point(675, 310);
 			this.textBox6.Name = "textBox6";
+			this.textBox6.ReadOnly = true;
 			this.textBox6.Size = new System.Drawing.Size(290, 32);
 			this.textBox6.TabIndex = 19;
 			// 
@@ -242,9 +244,6 @@
 			// 
 			this.comboBox0.Font = new System.Drawing.Font("Open Sans", 13.75F);
 			this.comboBox0.FormattingEnabled = true;
-			this.comboBox0.Items.AddRange(new object[] {
-            "Мужской",
-            "Женский"});
 			this.comboBox0.Location = new System.Drawing.Point(245, 410);
 			this.comboBox0.Name = "comboBox0";
 			this.comboBox0.Size = new System.Drawing.Size(200, 32);
@@ -274,6 +273,7 @@
 			this.pictureBox_image.Location = new System.Drawing.Point(845, 132);
 			this.pictureBox_image.Name = "pictureBox_image";
 			this.pictureBox_image.Size = new System.Drawing.Size(120, 160);
+			this.pictureBox_image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.pictureBox_image.TabIndex = 26;
 			this.pictureBox_image.TabStop = false;
 			// 
@@ -284,8 +284,9 @@
 			this.button1.Name = "button1";
 			this.button1.Size = new System.Drawing.Size(150, 35);
 			this.button1.TabIndex = 27;
-			this.button1.Text = "Регестрация";
+			this.button1.Text = "Регистрация";
 			this.button1.UseVisualStyleBackColor = true;
+			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// button2
 			// 
@@ -296,6 +297,7 @@
 			this.button2.TabIndex = 28;
 			this.button2.Text = "Отмена";
 			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// button0
 			// 
@@ -306,6 +308,7 @@
 			this.button0.TabIndex = 29;
 			this.button0.Text = "Просмотр...";
 			this.button0.UseVisualStyleBackColor = true;
+			this.button0.Click += new System.EventHandler(this.button0_Click);
 			// 
 			// Form4
 			// 
@@ -374,5 +377,6 @@
 		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.Button button2;
 		private System.Windows.Forms.Button button0;
+		private System.Windows.Forms.OpenFileDialog openFileDialog;
 	}
 }
