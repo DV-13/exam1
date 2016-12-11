@@ -19,12 +19,17 @@ namespace exam1
 		public FormMain()
 		{
 			InitializeComponent();
+
 			MaximizeBox = false; //состояние кнопки разворачивания окна на полный экран
 			StartPosition = FormStartPosition.CenterScreen; //запуск окна в центре экрана
+
 			Form1 MDIChild = new Form1(); //запуск дочерней формы
 			MDIChild.MdiParent = this; MDIChild.Show();
-			DateTime.TryParse("18.07.2017", out Event);
+
+			DateTime.TryParse("18.07.2017", out Event);//Для таймера
 			label_timer.Text = ((Event - DateTime.Now).Days + " дней " + (Event - DateTime.Now).Hours + " часов и " + (Event - DateTime.Now).Minutes + " минут до старта марафона!");
+
+
 		}
 
 		private void button_home_Click(object sender, EventArgs e)
@@ -328,6 +333,12 @@ namespace exam1
 		private void timer_countdown_Tick(object sender, EventArgs e)
 		{
 			label_timer.Text = ((Event - DateTime.Now).Days + " дней " + (Event - DateTime.Now).Hours + " часов и " + (Event - DateTime.Now).Minutes + " минут до старта марафона!");
+		}
+
+		private void button_logout_Click(object sender, EventArgs e)
+		{
+			Form3 MDIChild = new Form3(); //переход с одной формы на другую 
+			MDIChild.MdiParent = this.MdiParent; MDIChild.Show(); Close();
 		}
 	}
 }
