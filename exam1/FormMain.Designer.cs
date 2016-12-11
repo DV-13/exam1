@@ -71,6 +71,7 @@
 			this.button_home.TabIndex = 0;
 			this.button_home.Text = "🏠";
 			this.button_home.UseVisualStyleBackColor = true;
+			this.button_home.Click += new System.EventHandler(this.button_home_Click);
 			// 
 			// button_logout
 			// 
