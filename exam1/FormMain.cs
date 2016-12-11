@@ -15,9 +15,10 @@ namespace exam1
 		public FormMain()
 		{
 			InitializeComponent();
-			Form1 MDIChild = new Form1();
-			MDIChild.MdiParent = this;
-			MDIChild.Show();
+			MaximizeBox = false; //состояние кнопки разворачивания окна на полный экран
+			StartPosition = FormStartPosition.CenterScreen; //запуск окна в центре экрана
+			Form0 MDIChild = new Form0(); //запуск дочерней формы
+			MDIChild.MdiParent = this; MDIChild.Show();
 		}
 	}
 }
