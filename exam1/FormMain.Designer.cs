@@ -54,11 +54,11 @@
 			// label_top
 			// 
 			this.label_top.AutoSize = true;
-			this.label_top.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label_top.Font = new System.Drawing.Font("Open Sans", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label_top.ForeColor = System.Drawing.SystemColors.ControlLight;
-			this.label_top.Location = new System.Drawing.Point(180, 15);
+			this.label_top.Location = new System.Drawing.Point(170, 10);
 			this.label_top.Name = "label_top";
-			this.label_top.Size = new System.Drawing.Size(401, 37);
+			this.label_top.Size = new System.Drawing.Size(400, 43);
 			this.label_top.TabIndex = 1;
 			this.label_top.Text = "MARATHON SKILLS 2016";
 			// 
@@ -74,7 +74,7 @@
 			// 
 			// button_logout
 			// 
-			this.button_logout.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.button_logout.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.button_logout.Location = new System.Drawing.Point(865, 15);
 			this.button_logout.Name = "button_logout";
 			this.button_logout.Size = new System.Drawing.Size(100, 35);
@@ -84,7 +84,7 @@
 			// 
 			// button_back
 			// 
-			this.button_back.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.button_back.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.button_back.Location = new System.Drawing.Point(15, 15);
 			this.button_back.Name = "button_back";
 			this.button_back.Size = new System.Drawing.Size(100, 35);
@@ -104,11 +104,11 @@
 			// label_timer
 			// 
 			this.label_timer.AutoSize = true;
-			this.label_timer.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.label_timer.Font = new System.Drawing.Font("Open Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.label_timer.ForeColor = System.Drawing.SystemColors.ControlLight;
-			this.label_timer.Location = new System.Drawing.Point(410, 8);
+			this.label_timer.Location = new System.Drawing.Point(400, 3);
 			this.label_timer.Name = "label_timer";
-			this.label_timer.Size = new System.Drawing.Size(164, 27);
+			this.label_timer.Size = new System.Drawing.Size(184, 33);
 			this.label_timer.TabIndex = 1;
 			this.label_timer.Text = "█label_timer█";
 			// 
