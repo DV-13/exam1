@@ -41,7 +41,7 @@
 			// 
 			// panel_topbar
 			// 
-			this.panel_topbar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.panel_topbar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.panel_topbar.Controls.Add(this.label_top);
 			this.panel_topbar.Controls.Add(this.button_home);
 			this.panel_topbar.Controls.Add(this.button_logout);
@@ -94,7 +94,7 @@
 			// 
 			// panel_bottom
 			// 
-			this.panel_bottom.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.panel_bottom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
 			this.panel_bottom.Controls.Add(this.label_timer);
 			this.panel_bottom.Location = new System.Drawing.Point(2, 617);
 			this.panel_bottom.Name = "panel_bottom";
