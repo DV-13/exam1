@@ -174,7 +174,8 @@
 			// 
 			this.button_hint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
 			this.button_hint.Cursor = System.Windows.Forms.Cursors.Default;
-			this.button_hint.ForeColor = System.Drawing.SystemColors.ControlText;
+			this.button_hint.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.button_hint.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.button_hint.Location = new System.Drawing.Point(530, 320);
 			this.button_hint.Name = "button_hint";
 			this.button_hint.Size = new System.Drawing.Size(20, 20);
