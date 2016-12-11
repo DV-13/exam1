@@ -86,12 +86,14 @@
 			// button_back
 			// 
 			this.button_back.Font = new System.Drawing.Font("Open Sans Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.button_back.ForeColor = System.Drawing.SystemColors.ControlText;
 			this.button_back.Location = new System.Drawing.Point(15, 15);
 			this.button_back.Name = "button_back";
 			this.button_back.Size = new System.Drawing.Size(100, 35);
 			this.button_back.TabIndex = 0;
 			this.button_back.Text = "Назад";
 			this.button_back.UseVisualStyleBackColor = true;
+			this.button_back.Click += new System.EventHandler(this.button_back_Click);
 			// 
 			// panel_bottom
 			// 

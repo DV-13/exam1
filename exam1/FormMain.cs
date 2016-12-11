@@ -35,10 +35,23 @@ namespace exam1
 		private void FormMain_MdiChildActivate(object sender, EventArgs e)
 		{
 			var newChildName = ActiveMdiChild.Name.ToString();
-			if(newChildName.Length == 5)
+
+			if (newChildName.Length == 5)
 				newChildName = newChildName.Substring(4, 1);
 			else
 				newChildName = newChildName.Substring(4, 2);
+
+			if (newChildName == "1")          //Отключение кнопки назад на главном экране.
+			{
+				button_back.Enabled = false;
+				button_back.ForeColor = SystemColors.ControlLight; //Не работает
+			}
+			else
+			{
+				button_back.Enabled = true;
+				button_back.ForeColor = Color.Black;
+			}
+
 			label_timer.Text = newChildName;
 			history[ihistory] = Int32.Parse(newChildName);
 			ihistory++;
@@ -47,6 +60,11 @@ namespace exam1
 			{
 				label_top.Text += (i+",");
 			}
+		}
+
+		private void button_back_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
