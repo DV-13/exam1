@@ -17,7 +17,7 @@ namespace exam1
 			InitializeComponent();
 			MaximizeBox = false; //состояние кнопки разворачивания окна на полный экран
 			StartPosition = FormStartPosition.CenterScreen; //запуск окна в центре экрана
-			Form0 MDIChild = new Form0(); //запуск дочерней формы
+			Form1 MDIChild = new Form1(); //запуск дочерней формы
 			MDIChild.MdiParent = this; MDIChild.Show();
 		}
 	}
