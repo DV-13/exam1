@@ -125,6 +125,7 @@
 			this.IsMdiContainer = true;
 			this.Name = "FormMain";
 			this.Text = "Marathon Skills";
+			this.MdiChildActivate += new System.EventHandler(this.FormMain_MdiChildActivate);
 			this.panel_topbar.ResumeLayout(false);
 			this.panel_topbar.PerformLayout();
 			this.panel_bottom.ResumeLayout(false);
