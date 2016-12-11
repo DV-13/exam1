@@ -46,6 +46,10 @@ namespace exam1
 
 		private void FormMain_MdiChildActivate(object sender, EventArgs e)
 		{
+			if (Program.reg != "")
+				button_logout.Text = "Logout";
+			else
+				button_logout.Text = "Login";
 			var newChildName = ActiveMdiChild.Name.ToString();
 
 			if (newChildName.Length == 5)
@@ -342,9 +346,17 @@ namespace exam1
 
 		private void button_logout_Click(object sender, EventArgs e)
 		{
-			var OldMDIChild = ActiveMdiChild;
-			Form3 MDIChild = new Form3(); //переход с одной формы на другую 
-			MDIChild.MdiParent = this; MDIChild.Show(); OldMDIChild.Close();
+			if (Program.reg != "")
+			{
+				Program.reg = "";
+				button_logout.Text = "Login";
+			}
+			else
+			{
+				var OldMDIChild = ActiveMdiChild;
+				Form3 MDIChild = new Form3(); //переход с одной формы на другую 
+				MDIChild.MdiParent = this; MDIChild.Show(); OldMDIChild.Close();
+			}
 		}
 	}
 }
