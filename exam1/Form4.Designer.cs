@@ -122,6 +122,7 @@
 			this.textBox1.Name = "textBox1";
 			this.textBox1.Size = new System.Drawing.Size(300, 32);
 			this.textBox1.TabIndex = 9;
+			this.textBox1.UseSystemPasswordChar = true;
 			// 
 			// label2
 			// 
@@ -142,6 +143,7 @@
 			this.textBox2.Name = "textBox2";
 			this.textBox2.Size = new System.Drawing.Size(300, 32);
 			this.textBox2.TabIndex = 11;
+			this.textBox2.UseSystemPasswordChar = true;
 			// 
 			// label3
 			// 
